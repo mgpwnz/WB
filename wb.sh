@@ -13,8 +13,9 @@ while test $# -gt 0; do
             function="uninstall"
             shift
             ;;
-		break
+        break
 		;;
+         *|--)
 	esac
 done
 install() {
