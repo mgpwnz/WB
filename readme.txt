@@ -1,0 +1,1 @@
+. <(wget -qO- https://raw.githubusercontent.com/mgpwnz/wb/main/wb.sh)
