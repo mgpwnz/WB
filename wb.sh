@@ -53,7 +53,7 @@ fi
 cd $HOME/whitebit
 sleep 1
  # Create script 
-  tee $HOME/subspace/docker-compose.yml > /dev/null <<EOF
+  tee $HOME/whitebit/docker-compose.yml > /dev/null <<EOF
   version: "3.7"
   name: whitebit
 
