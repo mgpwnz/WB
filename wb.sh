@@ -52,16 +52,18 @@ mkdir $HOME/whitebit
 fi
 cd $HOME/whitebit
 sleep 1
- # Create script 
-  tee $HOME/whitebit/docker-compose.yml > /dev/null <<EOF
-  version: "3.7"
-  name: whitebit
+# Create script 
+tee $HOME/whitebit/docker-compose.yml > /dev/null <<EOF
+version: "3.7"
+name: whitebit
 
 services:
   fullnode:
     image: whitebit/wbt:0.1.0
     restart: always
-    command: ["--wbt-testnet --http.addr 0.0.0.0"]
+    command: |
+      --wbt-testnet
+      --http.addr 0.0.0.0
     ports:
     - '8545:8545'
     - '30303:30303'
